@@ -1,7 +1,7 @@
 (function ($) {
   "use strict";
 
-  // Preloader
+  //Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
@@ -10,7 +10,7 @@
     }
   });
 
-  // Back to top button
+  //Botón de ir arriba
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -23,10 +23,10 @@
     return false;
   });
 
-  // Initiate the wowjs animation library
+  //Inicia la biblioteca de animación wowjs
   new WOW().init();
 
-  // Initiate superfish on nav menu
+  //Inicia superfish en el nav menu
   $('.nav-menu').superfish({
     animation: {
       opacity: 'show'
@@ -34,7 +34,7 @@
     speed: 400
   });
 
-  // Mobile Navigation
+  //Navegación óvi
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
       id: 'mobile-nav'
@@ -74,7 +74,7 @@
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Header scroll class
+  //Clase de scroll encabezado
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -87,7 +87,7 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // Smooth scroll for the menu and links with .scrollto classes
+  //Desplazamiento suave para el menú y enlaces con la class .scrollto
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -121,7 +121,7 @@
     }
   });
 
-  // Navigation active state on scroll
+  //Estado activo de la navegación del scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
   var main_nav_height = $('#header').outerHeight();
@@ -140,7 +140,7 @@
     });
   });
 
-  // Intro carousel
+  //Intro del carrusel
   var introCarousel = $(".carousel");
   var introCarouselIndicators = $(".carousel-indicators");
   introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
@@ -160,34 +160,34 @@
     allowPageScroll:"vertical"
   });
 
-  // Skills section
-  $('#skills').waypoint(function() {
+  //Sección de habilidades
+  $('#habilidades').waypoint(function() {
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
   }, { offset: '80%'} );
 
-  // jQuery counterUp (used in Facts section)
+  //jQuery counterUp de la sección datos
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Porfolio isotope and filter
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-item',
+  //Isotopo y filtro de Portafolio
+  var portafolioIsotope = $('.portafolio-container').isotope({
+    itemSelector: '.portafolio-item',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
+  $('#portafolio-flters li').on( 'click', function() {
+    $("#portafolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    portafolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
+  //Carrrusel de clientes, librería Owl Carousel
+  $(".proveedores-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
@@ -195,8 +195,8 @@
     }
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  //Carrusel de Testimonios, librería Owl Carousel.
+  $(".testimonios-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
@@ -204,4 +204,3 @@
   });
 
 })(jQuery);
-

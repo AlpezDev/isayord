@@ -1,16 +1,5 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
 body {
-  background: #fff;     /*#18d26e ---> verde original*/
+  background: #fff;     /*#18d26e */
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
@@ -45,7 +34,7 @@ h6 {
   padding: 0;
 }
 
-/* Back to top button */
+/* Botón de ir arriba */
 
 .back-to-top {
   position: fixed;
@@ -120,10 +109,7 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-
+/*-------------------------------------------------------- HEADER --------------------------------------------------------*/
 #header {
   padding: 30px 0;
   height: 92px;
@@ -168,10 +154,7 @@ h6 {
   margin: 0;
 }
 
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
-
+/*-------------------------------------------------------- Sección del Intro --------------------------------------------------------*/
 #intro {
   display: table;
   width: 100%;
@@ -305,12 +288,9 @@ h6 {
   color: #fec118;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/*-------------------------------------------------------- Menú de Navigación --------------------------------------------------------*/
 
 /* Nav Menu Essentials */
-
 .nav-menu,
 .nav-menu * {
   margin: 0;
@@ -531,8 +511,7 @@ h6 {
   display: none;
 }
 
-/* Mobile Nav body classes */
-
+/* Clases Móvil - Nav body */
 body.mobile-nav-active {
   overflow: hidden;
 }
@@ -544,13 +523,9 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
+/*------------------------------------------------- SECCIONES -------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-
-/* Sections Header
---------------------------------*/
+/*------------- Sección de encabezados - Header -------------*/
 
 .section-header h3 {
   font-size: 32px;
@@ -590,59 +565,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
 }
 
-/* Section with background
---------------------------------*/
-
+/*-------------- Sección con fondo --------------*/
 .section-bg {
   background: #f7f7f7;
 }
 
-/* Featured Services Section
---------------------------------*/
 
-#featured-services {
+/*-------------- Sección de servicios destacados --------------*/
+
+#featured-servicios {
   background: #000;
 }
 
-#featured-services .box {
+#featured-servicios .box {
   padding: 30px 20px;
 }
 
-#featured-services .box-bg {
+#featured-servicios .box-bg {
   background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
 }
 
-#featured-services i {
+#featured-servicios i {
   color: #fec118;
   font-size: 48px;
   display: inline-block;
   line-height: 1;
 }
 
-#featured-services h4 {
+#featured-servicios h4 {
   font-weight: 400;
   margin: 15px 0;
   font-size: 18px;
 }
 
-#featured-services h4 a {
+#featured-servicios h4 a {
   color: #fff;
 }
 
-#featured-services h4 a:hover {
+#featured-servicios h4 a:hover {
   color: #fec118;
 }
 
-#featured-services p {
+#featured-servicios p {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
 }
 
-/* About Us Section
---------------------------------*/
-
+/*-------------- Sección de Nosotros --------------*/
 #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -736,54 +707,51 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
-/* Services Section
---------------------------------*/
-
-#services {
+/*-------------- Sección de Servicios --------------*/
+#servicios {
   background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+#servicios .box {
   margin-bottom: 30px;
 }
 
-#services .icon {
+#servicios .icon {
   float: left;
 }
 
-#services .icon i {
+#servicios .icon i {
   color: #fec118;
   font-size: 36px;
   line-height: 1;
   transition: 0.5s;
 }
 
-#services .title {
+#servicios .title {
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
+#servicios .title a {
   color: #111;
 }
 
-#services .box:hover .title a {
+#servicios .box:hover .title a {
   color: #fec118;
 }
 
-#services .description {
+#servicios .description {
   font-size: 14px;
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
 }
 
-/* Call To Action Section
---------------------------------*/
+/*-------------- Sección de Call To Action --------------*/
 
 #call-to-action {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
@@ -821,19 +789,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #fec118;
 }
 
-/* Call To Action Section
---------------------------------*/
-
-#skills {
+/*-------------- Sección de Habilidades--------------*/
+#habilidades {
   padding: 60px 0;
 }
 
-#skills .progress {
+#habilidades .progress {
   height: 35px;
   margin-bottom: 10px;
 }
 
-#skills .progress .skill {
+#habilidades .progress .habilidad {
   font-family: "Open Sans", sans-serif;
   line-height: 35px;
   padding: 0;
@@ -841,23 +807,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#skills .progress .skill .val {
+#habilidades .progress .habilidad .val {
   float: right;
   font-style: normal;
   margin: 0 20px 0 0;
 }
 
-#skills .progress-bar {
+#habilidades .progress-bar {
   width: 1px;
   text-align: left;
   transition: .9s;
 }
 
-/* Facts Section
---------------------------------*/
+/*-------------- Sección de Facts (DATOS) --------------*/
 
 #facts {
-  background: url("../img/facts-bg.jpg") center top no-repeat fixed;
+  background: url("../img/fondo.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
@@ -900,21 +865,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 30px;
 }
 
-/* Portfolio Section
---------------------------------*/
-
-#portfolio {
+/*-------------- Sección de portafolio --------------*/
+#portafolio {
   padding: 60px 0;
 }
 
-#portfolio #portfolio-flters {
+#portafolio #portafolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-#portfolio #portfolio-flters li {
+#portafolio #portafolio-flters li {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
@@ -929,32 +892,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
+#portafolio #portafolio-flters li:hover,
+#portafolio #portafolio-flters li.filter-active {
   background: #fec118;
   color: #fff;
 }
 
-#portfolio #portfolio-flters li:last-child {
+#portafolio #portafolio-flters li:last-child {
   margin-right: 0;
 }
 
-#portfolio .portfolio-wrap {
+#portafolio .portafolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-#portfolio .portfolio-wrap:hover {
+#portafolio .portafolio-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-#portfolio .portfolio-item {
+#portafolio .portafolio-item {
   position: relative;
   height: 360px;
   overflow: hidden;
 }
 
-#portfolio .portfolio-item figure {
+#portafolio .portafolio-item figure {
   background: #000;
   overflow: hidden;
   height: 240px;
@@ -963,13 +926,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#portfolio .portfolio-item figure:hover img {
+#portafolio .portafolio-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
 }
 
-#portfolio .portfolio-item figure .link-preview,
-#portfolio .portfolio-item figure .link-details {
+#portafolio .portafolio-item figure .link-preview,
+#portafolio .portafolio-item figure .link-details {
   position: absolute;
   display: inline-block;
   opacity: 0;
@@ -982,44 +945,44 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.2s linear;
 }
 
-#portfolio .portfolio-item figure .link-preview i,
-#portfolio .portfolio-item figure .link-details i {
+#portafolio .portafolio-item figure .link-preview i,
+#portafolio .portafolio-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
 }
 
-#portfolio .portfolio-item figure .link-preview:hover,
-#portfolio .portfolio-item figure .link-details:hover {
+#portafolio .portafolio-item figure .link-preview:hover,
+#portafolio .portafolio-item figure .link-details:hover {
   background: #fec118;
 }
 
-#portfolio .portfolio-item figure .link-preview:hover i,
-#portfolio .portfolio-item figure .link-details:hover i {
+#portafolio .portafolio-item figure .link-preview:hover i,
+#portafolio .portafolio-item figure .link-details:hover i {
   color: #fff;
 }
 
-#portfolio .portfolio-item figure .link-preview {
+#portafolio .portafolio-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#portfolio .portfolio-item figure .link-details {
+#portafolio .portafolio-item figure .link-details {
   right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#portfolio .portfolio-item figure:hover .link-preview {
+#portafolio .portafolio-item figure:hover .link-preview {
   opacity: 1;
   left: calc(50% - 44px);
 }
 
-#portfolio .portfolio-item figure:hover .link-details {
+#portafolio .portafolio-item figure:hover .link-details {
   opacity: 1;
   right: calc(50% - 44px);
 }
 
-#portfolio .portfolio-item .portfolio-info {
+#portafolio .portafolio-item .portafolio-info {
   background: #fff;
   text-align: center;
   padding: 30px;
@@ -1027,7 +990,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 0 3px 3px;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 {
+#portafolio .portafolio-item .portafolio-info h4 {
   font-size: 18px;
   line-height: 1px;
   font-weight: 700;
@@ -1035,15 +998,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 0;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 a {
+#portafolio .portafolio-item .portafolio-info h4 a {
   color: #333;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 a:hover {
+#portafolio .portafolio-item .portafolio-info h4 a:hover {
   color: #fec118;
 }
 
-#portfolio .portfolio-item .portfolio-info p {
+#portafolio .portafolio-item .portafolio-info p {
   padding: 0;
   margin: 0;
   color: #b8b8b8;
@@ -1052,31 +1015,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-/* Clients Section
---------------------------------*/
+/*-------------- Sección clientes --------------*/
 
-#clients {
+#proveedores {
   padding: 60px 0;
 }
 
-#clients img {
+#proveedores img {
   max-width: 100%;
   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 0;
 }
 
-#clients img:hover {
+#proveedores img:hover {
   opacity: 1;
 }
 
-#clients .owl-nav,
-#clients .owl-dots {
+#proveedores .owl-nav,
+#proveedores .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-#clients .owl-dot {
+#proveedores .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -1085,53 +1047,51 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #ddd;
 }
 
-#clients .owl-dot.active {
+#proveedores .owl-dot.active {
   background-color: #fec118;
 }
 
-/* Testimonials Section
---------------------------------*/
-
-#testimonials {
+/*-------------- Sección Testimonios --------------*/
+#testimonios {
   padding: 60px 0;
 }
 
-#testimonials .section-header {
+#testimonios .section-header {
   margin-bottom: 40px;
 }
 
-#testimonials .testimonial-item {
+#testimonios .testimonio-item {
   text-align: center;
 }
 
-#testimonials .testimonial-item .testimonial-img {
+#testimonios .testimonio-item .testimonio-img {
   width: 120px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
 }
 
-#testimonials .testimonial-item h3 {
+#testimonios .testimonio-item h3 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
-#testimonials .testimonial-item h4 {
+#testimonios .testimonio-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0 0 15px 0;
 }
 
-#testimonials .testimonial-item .quote-sign-left {
+#testimonios .testimonio-item .comilla-izquierda {
   margin-top: -15px;
   padding-right: 10px;
   display: inline-block;
   width: 37px;
 }
 
-#testimonials .testimonial-item .quote-sign-right {
+#testimonios .testimonio-item .comilla-derecha {
   margin-bottom: -15px;
   padding-left: 10px;
   display: inline-block;
@@ -1139,18 +1099,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 37px;
 }
 
-#testimonials .testimonial-item p {
+#testimonios .testimonio-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
 
-#testimonials .owl-nav,
-#testimonials .owl-dots {
+#testimonios .owl-nav,
+#testimonios .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-#testimonials .owl-dot {
+#testimonios .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -1159,26 +1119,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #ddd;
 }
 
-#testimonials .owl-dot.active {
+#testimonios .owl-dot.active {
   background-color: #fec118;
 }
 
-/* Team Section
---------------------------------*/
-
-#team {
+/*-------------- Sección Equipo --------------*/
+#equipo {
   background: #fff;
   padding: 60px 0;
 }
 
-#team .member {
+#equipo .member {
   text-align: center;
   margin-bottom: 20px;
   background: #000;
   position: relative;
 }
 
-#team .member .member-info {
+#equipo .member .member-info {
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1200,80 +1158,78 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.2s;
 }
 
-#team .member .member-info-content {
+#equipo .member .member-info-content {
   margin-top: -50px;
   transition: margin 0.2s;
 }
 
-#team .member:hover .member-info {
+#equipo .member:hover .member-info {
   background: rgba(0, 0, 0, 0.7);
   opacity: 1;
   transition: 0.4s;
 }
 
-#team .member:hover .member-info-content {
+#equipo .member:hover .member-info-content {
   margin-top: 0;
   transition: margin 0.4s;
 }
 
-#team .member h4 {
+#equipo .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
 
-#team .member span {
+#equipo .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
 }
 
-#team .member .social {
+#equipo .member .social {
   margin-top: 15px;
 }
 
-#team .member .social a {
+#equipo .member .social a {
   transition: none;
   color: #fff;
 }
 
-#team .member .social a:hover {
+#equipo .member .social a:hover {
   color: #fec118;
 }
 
-#team .member .social i {
+#equipo .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
 
-/* Contact Section
---------------------------------*/
-
-#contact {
+/*-------------- Sección Contacto --------------*/
+#contacto {
   padding: 60px 0;
 }
 
-#contact .contact-info {
+#contacto .contacto-info {
   margin-bottom: 20px;
   text-align: center;
 }
 
-#contact .contact-info i {
+#contacto .contacto-info i {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
   color: #fec118;
 }
 
-#contact .contact-info address,
-#contact .contact-info p {
+#contacto .contacto-info address,
+#contacto .contacto-info p {
   margin-bottom: 0;
   color: #000;
 }
 
-#contact .contact-info h3 {
+#contacto .contacto-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -1281,21 +1237,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-#contact .contact-info a {
+#contacto .contacto-info a {
   color: #000;
 }
 
-#contact .contact-info a:hover {
+#contacto .contacto-info a:hover {
   color: #fec118;
 }
 
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
+#contacto .contacto-address,
+#contacto .contacto-phone,
+#contacto .contacto-email {
   margin-bottom: 20px;
 }
 
-#contact .form #sendmessage {
+#contacto .form #sendmessage {
   color: #fec118;
   border: 1px solid #fec118;
   display: none;
@@ -1305,7 +1261,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #errormessage {
+#contacto .form #errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -1315,13 +1271,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
-#contact .form .show {
+#contacto .form #sendmessage.show,
+#contacto .form #errormessage.show,
+#contacto .form .show {
   display: block;
 }
 
-#contact .form .validation {
+#contacto .form .validation {
   color: red;
   display: none;
   margin: 0 0 20px;
@@ -1329,15 +1285,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
 }
 
-#contact .form input,
-#contact .form textarea {
+#contacto .form input,
+#contacto .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
   font-size: 15px;
 }
 
-#contact .form button[type="submit"] {
+#contacto .form button[type="submit"] {
   background: #fec118;
   border: 0;
   padding: 10px 30px;
@@ -1346,7 +1302,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
-#contact .form button[type="submit"]:hover {
+#contacto .form button[type="submit"]:hover {
   background: #13a456;
 }
 
@@ -1469,11 +1425,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fec118;
 }
 
-#footer .footer-top .footer-contact {
+#footer .footer-top .footer-contacto {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-contacto p {
   line-height: 26px;
 }
 
@@ -1518,20 +1474,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 @media (min-width: 768px) {
-  #contact .contact-address,
-  #contact .contact-phone,
-  #contact .contact-email {
+  #contacto .contacto-address,
+  #contacto .contacto-phone,
+  #contacto .contacto-email {
     padding: 20px 0;
   }
 
-  #contact .contact-phone {
+  #contacto .contacto-phone {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
 }
 
 @media (min-width: 992px) {
-  #testimonials .testimonial-item p {
+  #testimonios .testimonio-item p {
     width: 80%;
   }
 }
