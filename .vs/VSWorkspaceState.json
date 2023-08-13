@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\js",
+    "\\lib",
+    "\\lib\\ionicons",
+    "\\lib\\ionicons\\css"
   ],
-  "SelectedNode": "\\css\\style.css",
+  "SelectedNode": "\\lib\\ionicons\\css\\ionicons.min.css",
   "PreviewInSolutionExplorer": false
 }
